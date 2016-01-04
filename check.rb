@@ -18,3 +18,10 @@ pg = PG.connect({
   user: ENV['POSTGRES_USER']
   })
 log pg.exec("SELECT version();").first["version"]
+
+log "A new log message..."
+log "zzzzzzzzzzzzzzzzzzzzzz..."
+sleep 1
+log "zzzzzzzzzzzzzzzzzzzzzz..."
+sleep 1
+log "bye"
